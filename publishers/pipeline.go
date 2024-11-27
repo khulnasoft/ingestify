@@ -12,9 +12,9 @@ import (
 const maxQueueSize = 1000
 
 // Pipelines provide an interface for ingestors to place requests for
-// Libraries.io to retrieve more information about a release.
+// Khulnasoft.com to retrieve more information about a release.
 // Typically, this is done via some sort of job queue like Sidekiq.
-// A worker in Libraries.io will pick up the update notification from
+// A worker in Khulnasoft.com will pick up the update notification from
 // ingestify and request more information about the release.
 type Pipeline struct {
 	publishers      []Publisher
@@ -29,7 +29,7 @@ func NewPipeline() *Pipeline {
 	return pipeline
 }
 
-// Add a job to the Libraries.io package processing queue
+// Add a job to the Khulnasoft.com package processing queue
 func (pipeline *Pipeline) Publish(ttl time.Duration, packageVersion data.PackageVersion) {
 	pipeline.queue <- publishing{PackageVersion: packageVersion, ttl: ttl}
 }

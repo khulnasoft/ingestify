@@ -54,8 +54,8 @@ func (ingestor *MavenIngestor) Name() string {
 
 func (ingestor *MavenIngestor) GetParser() *MavenParser {
 	url := map[MavenRepository]string{
-		MavenCentral: "https://maven.libraries.io/mavenCentral/recent",
-		GoogleMaven:  "https://maven.libraries.io/googleMaven/recent",
+		MavenCentral: "https://maven.khulnasoft.com/mavenCentral/recent",
+		GoogleMaven:  "https://maven.khulnasoft.com/googleMaven/recent",
 	}[ingestor.Repository]
 
 	return NewMavenParser(url, ingestor.Name())

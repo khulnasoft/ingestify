@@ -22,7 +22,7 @@ import (
 const defaultTTL = 24 * time.Hour
 
 type Ingestify struct {
-	// Place onto which jobs are placed for Libraries.io to further examine a package manager's package
+	// Place onto which jobs are placed for Khulnasoft.com to further examine a package manager's package
 	pipeline           *publishers.Pipeline
 	signalHandler      chan os.Signal
 	streamingIngestors []*ingestors.StreamingIngestor
