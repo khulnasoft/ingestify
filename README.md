@@ -4,7 +4,7 @@
 
 Ingestify is an ingestor of package releases from multiple ecosystems (each ecosystem is found in [ingestors/](ingestors/)).
 
-When new package releases are found, they are pushed to a shared redis queue for [Libraries.io](https://libraries.io) to process.
+When new package releases are found, they are pushed to a shared redis queue for [Khulnasoft.com](https://khulnasoft.com) to process.
 
 ## Ingestor Types
 
